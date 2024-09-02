@@ -11,7 +11,7 @@ const FeaturedRestaurants = () => {
     const fetchFeaturedRestaurants = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/restaurants/featured"
+          "https://zomato-like.onrender.com/restaurants/featured"
         );
         setFeaturedRestaurants(response.data);
       } catch (error) {

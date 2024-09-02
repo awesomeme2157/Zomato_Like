@@ -38,10 +38,10 @@ function RestaurantList() {
     const fetchFilters = async () => {
       try {
         const citiesResponse = await axios.get(
-          "http://localhost:5000/restaurants/cities"
+          "https://zomato-like.onrender.com/restaurants/cities"
         );
         const cuisinesResponse = await axios.get(
-          "http://localhost:5000/restaurants/cuisines"
+          "https://zomato-like.onrender.com/restaurants/cuisines"
         );
         console.log("Cities response:", citiesResponse.data); // Log the response
         console.log("Cuisines response:", cuisinesResponse.data); // Log the response
@@ -59,7 +59,7 @@ function RestaurantList() {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5000/restaurants?page=${page}&limit=${limit}`,
+          `https://zomato-like.onrender.com/restaurants?page=${page}&limit=${limit}`,
           {
             params: filters,
           }
