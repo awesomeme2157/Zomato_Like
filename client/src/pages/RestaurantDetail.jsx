@@ -12,7 +12,7 @@ import {
   MdThumbUp,
 } from "react-icons/md";
 
-const UNSPLASH_ACCESS_KEY = "xxCNDNbKS_AQt6tXxmfP3n79P0Ae_PSqA_nnJTTGtis";
+const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
 
 function RestaurantDetail() {
   const { id } = useParams();
